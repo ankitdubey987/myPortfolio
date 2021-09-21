@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAward } from "@fortawesome/free-solid-svg-icons";
 
 
 class Awards extends Component {
@@ -19,7 +17,7 @@ class Awards extends Component {
           {
             this.awards.map((data, index) => (
               <li key={index}>
-                <img src={data.image_url} className="mb-2 ml-2" width="5%"></img>
+                <img src={data.image_url} className="mb-2 ml-2" width="5%" alt="{data.certificate}"></img>
                 <span className="ml-2"> {data.certificate} </span>
               </li>
             ))

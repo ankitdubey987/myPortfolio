@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAward } from "@fortawesome/free-solid-svg-icons";
 
 
 class Volunteer extends Component {
@@ -19,7 +17,7 @@ class Volunteer extends Component {
           {
             this.volunteer.map((data, index) => (
               <li key={index}>
-                <img src={data.image} className="mb-2 ml-2" width="5%"></img>
+                <img src={data.image} className="mb-2 ml-2" width="5%" alt="{data.role}"></img>
                 <span className="ml-2"> {data.role} </span>
               </li>
             ))
